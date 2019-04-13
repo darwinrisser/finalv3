@@ -1,0 +1,46 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+    box-shadow: 2px 3px lightgrey;
+    border-radius: 5px;
+    width: 350px;
+    height: 350px;
+    padding: 10px;
+    margin: 10px 10px;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Heebo', sans-serif;
+}
+
+h1 {
+    font-size: 20px;
+}
+
+p {
+    margin: .5em;
+}
+
+img {
+    height: 145px;
+    width: 145px;
+    box-shadow: 2px 2px 2px lightgrey;
+    border-radius: 5px;
+}
+
+#messageBtn {
+    height: auto;
+    padding: .5em;
+    width: 7.5em;
+    background-color: lightblue;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px lightslategrey;
+    font-family: 'Heebo', sans-serif;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
