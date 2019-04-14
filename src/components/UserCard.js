@@ -1,5 +1,7 @@
 import React from 'react';
 import './UserCard.css';
+import SimpleModal from './SimpleModal'
+import Button from '@material-ui/core/Button';
 
 function UserCard(props) {
     return(
@@ -8,7 +10,8 @@ function UserCard(props) {
             <img src={props.user.image} alt={props.user.name}/>
             <p>{props.user.instrument}</p>
             <p>{props.user.location}</p>
-            <a href="mailto: {props.user.email}" className="navLink"><button id="messageBtn"><i class="far fa-envelope"></i> Message</button></a>
+            <Button variant="contained" color="primary"><SimpleModal user={props.user}/></Button>
+            
         </div>
         );
     }
