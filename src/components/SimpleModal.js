@@ -4,6 +4,7 @@ import { withStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 import Modal from '@material-ui/core/Modal';
 import Button from '@material-ui/core/Button';
+import './SimpleModal.css';
 
 function rand() {
   return Math.round(Math.random() * 20) - 10;
@@ -46,10 +47,13 @@ class SimpleModal extends React.Component {
 
   render() {
     const { classes } = this.props;
-
+    const name = this.props.name;
+    const instrument = this.props.instrument;
+    const location = this.props.location;
+    const image = this.props.image;
     return (
       <div>
-        <Button onClick={this.handleOpen}>VIeW</Button>
+        <Button onClick={this.handleOpen}>VieW</Button>
         <Modal
           aria-labelledby="simple-modal-title"
           aria-describedby="simple-modal-description"
@@ -57,13 +61,21 @@ class SimpleModal extends React.Component {
           onClose={this.handleClose}
         >
           <div style={getModalStyle()} className={classes.paper}>
+            <img src={image} alt="{name}" className="prof"/>
             <Typography variant="h6" id="modal-title">
-              Name
+              {name}
             </Typography>
             <Typography variant="subtitle1" id="simple-modal-description">
-              Instrument
+              {instrument}
             </Typography>
-            <SimpleModalWrapped />
+            <Typography variant="subtitle1" id="simple-modal-description">
+              {location}
+            </Typography>
+            <Typography variant="subtitle1" id="simple-modal-description">
+              sldkfj a;slkdfj;l as;dlfkj;als dfj;laskdjf;las jd;lasjkdf;l ja;sldfj;alsdk jf;alskjdf;alskj f;laksjd;flakjsd;flasj;flajs;dlfkjalsjkdf
+            </Typography>
+
+            
           </div>
         </Modal>
       </div>

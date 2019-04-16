@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import UserCard from './UserCard';
+import MediaCard from './MediaCard';
 import './Dashboard.css';
 
 class Dashboard extends Component {
@@ -24,7 +24,7 @@ class Dashboard extends Component {
       return user.instrument.toLowerCase().indexOf( search.toLowerCase() ) !== -1
     })
     const cards = filteredUsers.map((u,i)=>{
-      return <UserCard key={i} user={u} />
+      return <MediaCard key={i} user={u} />
     });
 
      return (
