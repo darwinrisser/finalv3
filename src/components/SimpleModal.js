@@ -53,7 +53,7 @@ class SimpleModal extends React.Component {
     const image = this.props.image;
     return (
       <div>
-        <Button onClick={this.handleOpen}>VieW</Button>
+        <Button variant="outlined" onClick={this.handleOpen}>VieW</Button>
         <Modal
           aria-labelledby="simple-modal-title"
           aria-describedby="simple-modal-description"
@@ -73,9 +73,9 @@ class SimpleModal extends React.Component {
             </Typography>
             <Typography variant="subtitle1" id="simple-modal-description">
               sldkfj a;slkdfj;l as;dlfkj;als dfj;laskdjf;las jd;lasjkdf;l ja;sldfj;alsdk jf;alskjdf;alskj f;laksjd;flakjsd;flasj;flajs;dlfkjalsjkdf
+              <Button variant="outlined">Add</Button>
             </Typography>
-
-            
+            <Button variant="contained" color="primary">Contact</Button>
           </div>
         </Modal>
       </div>

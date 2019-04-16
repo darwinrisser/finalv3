@@ -19,10 +19,10 @@ function Home(props) {
   return (
     <div className="home">
       <main>
-        <h1>Welcome to Teacher Finder!</h1>
-        <h4>Teacher Finder is the easiest, fastest way to find a new private lesson instructor for your music program.</h4>
-        <h5>Create a free account today and find your new Clarinet/Trumpet/Voice/etc. teacher today!</h5>
-        <p>If you are a private instructor, create a free profile to make yourself visible to directors in search of new teachers.</p>
+        <h1>Welcome to Teacher Finder</h1>
+        <h4>the easiest, fastest way to find a new private lesson instructor for your music program.</h4>
+        <p>Create a free account and find your new instrumental teacher today!</p>
+        <p>If you are a private instructor, create a free profile to make yourself visible to directors in search of new teachers!</p>
         <span className="buttonSpan">
           <Link to="/signin">
             <Button variant="contained" className={classes.button}>

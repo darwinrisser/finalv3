@@ -1,28 +1,39 @@
 .home{
-  background-image: url("https://images.pexels.com/photos/210764/pexels-photo-210764.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-image: url("https://images.unsplash.com/photo-1554758809-9cbe30d3b6a9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80");
   background-position: center;
   height: 1000px;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .home main{ 
   display: flex;
-  width: 60%;
-  height: 60%;
+  width: 50%;
+  height: 30%;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   margin: auto;
+  margin-top: 8em;
+  padding: 3em;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 1px 1px 1px lightgray;
 }
 
 .home h1{
-  font-size: 5em;
+  font-size: 3em;
 }
 
 .home h4{
-  font-size: 2em;
+  font-size: 1.5em;
+  margin-top: 0;
 }
 
 .home h5{
-  font-size: 1.5em;
+  font-size: 1em;
 }
 
+.home a {
+  margin: 0em;
+}
