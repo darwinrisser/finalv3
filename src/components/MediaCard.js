@@ -9,15 +9,16 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import SimpleModal from './SimpleModal';
+import './MediaCard.css';
 
 const styles = {
   card: {
     minWidth: 245,
-    marginTop: 50,
+    marginTop: 35,
     margin: 20,
   },
   media: {
-    minHeight: 120,
+    minHeight: 200,
   },
 };
 
@@ -25,10 +26,11 @@ class MediaCard extends React.Component {
   render(){
     const { classes } = this.props;
   return (
-    <Card className={classes.card}>
+    <Card className={classes.card} id="cardPic">
       <CardActionArea>
         <CardMedia
           className={classes.media}
+          id="cardPic"
           image={this.props.user.image}
         />
         <CardContent>
