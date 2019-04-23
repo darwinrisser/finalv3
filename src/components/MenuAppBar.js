@@ -49,62 +49,31 @@ class MenuAppBar extends React.Component {
 
     return (
       <div className={classes.root}>
-        
-        <AppBar position="fixed">
+        <AppBar position="fixed" color="default">
           <Toolbar>
-            <IconButton className={classes.menuButton} color="inherit" aria-label="Menu">
-              <MenuIcon />
-            </IconButton>
-            <Typography variant="h6" color="inherit" className={classes.grow}>
-               <Link to="/">
-                <Button variant="outlined" className={classes.button} style={{color: 'white'}}>
-                  Home
-                </Button>
-               </Link>
-               <Link to="/dashboard">
-                <Button variant="outlined" className={classes.button} style={{color: 'white'}}>
-                  Dashboard
-                </Button>
-               </Link>
-            </Typography>
+              <Typography variant="h6" color="inherit" className={classes.grow} id="nav">
+                <Link to="/">
+                  <i class="fas fa-music"></i>  teacherr
+                </Link>
+                <Link to="/dashboard">
+                  <Button variant="" className={classes.button} style={{color: 'black'}}>
+                    
+                  </Button>
+                </Link>
+              </Typography>
             {auth && (
-              <div className={classes.button}>
-                  <Link to="/signin">
-                    <Button variant="contained" className={classes.button}>
-                      Sign In
-                    </Button>
-                  </Link>
-                  <Link to="/signup">
-                    <Button variant="contained" color="secondary" className={classes.button}>
-                      Sign Up
-                    </Button>
-                  </Link>
-                {/* <IconButton
-                  aria-owns={open ? 'menu-appbar' : undefined}
-                  aria-haspopup="true"
-                  onClick={this.handleMenu}
-                  color="inherit"
-                >
-                  <AccountCircle />
-                </IconButton> */}
-                <Menu
-                  id="menu-appbar"
-                  anchorEl={anchorEl}
-                  anchorOrigin={{
-                    vertical: 'top',
-                    horizontal: 'right',
-                  }}
-                  transformOrigin={{
-                    vertical: 'top',
-                    horizontal: 'right',
-                  }}
-                  open={open}
-                  onClose={this.handleClose}
-                >
-                  <MenuItem onClick={this.handleClose}>Profile</MenuItem>
-                  <MenuItem onClick={this.handleClose}>My account</MenuItem>
-                </Menu>
-              </div>
+                <div className={classes.button} id="nav">
+                    <Link to="/signup">
+                      <Button variant="contained" color="secondary" className={classes.button}>
+                        Sign Up
+                      </Button>
+                    </Link>
+                    <Link to="/signin">
+                      <Button variant="outlined" color="primary" className={classes.button}>
+                        Sign In
+                      </Button>
+                    </Link>
+                </div>
             )}
           </Toolbar>
         </AppBar>

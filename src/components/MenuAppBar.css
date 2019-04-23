@@ -1,3 +1,9 @@
  a{
   margin: .5em;
+  text-decoration: none;
+  color: black;
+}
+
+#nav{
+  padding: 0 5em;
 }

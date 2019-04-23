@@ -71,9 +71,14 @@ class SimpleModal extends React.Component {
             <Typography variant="subtitle1" id="simple-modal-description">
               {location}
             </Typography>
-            <Typography variant="subtitle1" id="simple-modal-description">
-              sldkfj a;slkdfj;l as;dlfkj;als dfj;laskdjf;las jd;lasjkdf;l ja;sldfj;alsdk jf;alskjdf;alskj f;laksjd;flakjsd;flasj;flajs;dlfkjalsjkdf
-              <Button variant="outlined">Add</Button>
+            <Typography variant="subtitle2" id="simple-modal-description">
+            Endoresments:
+            </Typography>
+            <Typography variant="subtitle2" id="simple-modal-description">
+            Leslie is a fantastic clarinet player and teacher, our clarinet students have shown immediate improvement after working with her.
+            </Typography>
+            <Typography variant="subtitle2" id="simple-modal-description">
+            - Joe David (Band Director)
             </Typography>
             <Button variant="contained" color="primary">Contact</Button>
           </div>
