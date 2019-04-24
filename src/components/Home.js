@@ -19,24 +19,18 @@ function Home(props) {
   return (
     <div className="home">
       <div className="top">
-        <h4>the easiest, fastest way to find a new private lesson instructor for your music program.</h4>
-        <p>Create a free account and find your new instrumental teacher today!</p>
-        <p>If you are a private instructor, create a free profile to make yourself visible to directors in search of new teachers!</p>
+        <h1 className="big">FIND A NEW TEACHER</h1>
+        <p className="sub">teacherr is the easiest way to connect with private instructors in your area</p>
         <span className="buttonSpan">
-          <Link to="/signin">
-            <Button variant="contained" color="primary" className={classes.button}>
-              Sign In
-            </Button>
-          </Link>
             <Link to="/signup">
-              <Button variant="contained" color="secondary" className={classes.button}>
-                Sign Up
+              <Button variant="contained" color="secondary" id="bigger-button" className={classes.button}>
+                REGISTER
               </Button>
             </Link>
         </span>  
       </div>  
       <div className="mid">
-        <h1>stuf stuff</h1>
+
       </div>  
     </div>
   )
