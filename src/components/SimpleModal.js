@@ -53,7 +53,7 @@ class SimpleModal extends React.Component {
     const image = this.props.image;
     return (
       <div>
-        <Button variant="outlined" onClick={this.handleOpen}>VieW</Button>
+        <Button variant="outlined" onClick={this.handleOpen}>View</Button>
         <Modal
           aria-labelledby="simple-modal-title"
           aria-describedby="simple-modal-description"

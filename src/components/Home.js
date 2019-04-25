@@ -29,9 +29,12 @@ function Home(props) {
             </Link>
         </span>  
       </div>  
-      <div className="mid">
+      {/* <div className="mid">
 
-      </div>  
+      </div> */}
+      <footer>
+        Darwin Risser 2019
+      </footer>  
     </div>
   )
 }
