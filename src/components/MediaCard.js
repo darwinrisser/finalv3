@@ -3,10 +3,8 @@ import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
-import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
-import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import SimpleModal from './SimpleModal';
 import './MediaCard.css';
@@ -14,11 +12,10 @@ import './MediaCard.css';
 const styles = {
   card: {
     minWidth: 245,
-    marginTop: 35,
-    margin: 20,
+    margin: 10,
   },
   media: {
-    minHeight: 200,
+    minHeight: 250
   },
 };
 
@@ -30,7 +27,6 @@ class MediaCard extends React.Component {
       <CardActionArea>
         <CardMedia
           className={classes.media}
-          id="cardPic"
           image={this.props.user.image}
         />
         <CardContent>
@@ -41,17 +37,13 @@ class MediaCard extends React.Component {
             {this.props.user.instrument}
           </Typography>
         </CardContent>
-      </CardActionArea>
-      <CardActions>
-        <Button size="small" color="primary">
         <SimpleModal 
             name={this.props.user.name}
             instrument={this.props.user.instrument}
             image={this.props.user.image}
             location={this.props.user.location}
             />   
-        </Button> 
-      </CardActions>
+      </CardActionArea>
     </Card>
   );
 }

@@ -10,11 +10,12 @@
 .search{
   grid-area: "search";
   box-shadow: 2px 2px whitesmoke;
-  border: solid 2px lightgrey;
+  border: solid 1px lightgrey;
   font-family: 'Heebo', sans-serif;
   width: 40%;
   height: 2em;
   margin: auto;
+  padding: .25em;
 }
 
 .main{

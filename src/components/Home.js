@@ -19,19 +19,46 @@ function Home(props) {
   return (
     <div className="home">
       <div className="top">
-        <h1 className="big">FIND A NEW TEACHER</h1>
-        <p className="sub">teacherr is the easiest way to connect with private instructors in your area</p>
-        <span className="buttonSpan">
-            <Link to="/signup">
-              <Button variant="contained" color="secondary" id="bigger-button" className={classes.button}>
-                REGISTER
-              </Button>
-            </Link>
-        </span>  
-      </div>  
+        <h1 className="big">FIND YOUR NEW TEACHER</h1>
+        <p className="sub"><i class="fas fa-music"></i> teacherr is the easiest way to connect with private instructors in your area</p>
+        <Link to="/signup">
+          <Button variant="contained" color="secondary" id="bigger-button" className={classes.button}>
+            REGISTER
+          </Button>
+        </Link>
+        <span id="down"> 
+          <i class="far fa-arrow-alt-circle-down"></i>
+        </span>
+      </div>
       <div className="mid">
-
+        <div className="info">
+          <p>
+            <i class="fas fa-search-location"></i>
+          </p>
+          <p>
+            Looking for a new instrumental teacher? Find the best teaching talent in your area with our easy to use search feature.
+          </p>
+        </div>
+        <div className="info">
+          <img id="example" src="https://i.imgur.com/hx8VSBG.jpg" alt="example of feature"/>
+        </div>
+        <div className="info">
+          <p>
+            <i class="fas fa-id-card"></i>
+          </p>  
+          <p>
+            Looking for a new instrumental teacher? Find the best teaching talent in your area with our easy to use search feature.
+          </p>
+        </div>   
       </div>  
+      <footer>
+          <p>
+            <i class="fab fa-react"></i> + <i class="fab fa-node-js"></i> + <i class="fas fa-coffee"></i>
+          </p>
+          <p>
+          github.com/darwinrisser | darwinrisser.dev | linkedin.com/in/darwinrisser
+          </p>
+      </footer>
     </div>
   )
 }
