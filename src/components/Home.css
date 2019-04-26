@@ -22,7 +22,22 @@
   grid-area: "b";
   background-color: whitesmoke;
   width: 100%;
-  height: 500px;
+  height: 700px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.info{
+  margin: 0;
+  text-align: center;
+  font-size: 1.5em;
+  padding: 2em;
+}
+
+.info i{
+  font-size: 3em;
 }
 
 .big{
@@ -38,7 +53,18 @@
   font-size: 1em;
 }
 
+#example{
+  border-radius: 50%;
+  min-height: 400px;
+  max-width: 400px;
+}
+
 footer{
   text-align: center;
-  padding: 1em;
+  font-size: 1em;
+}
+
+#down{
+  color: white;
+  font-size: 3em;
 }

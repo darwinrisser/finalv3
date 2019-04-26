@@ -29,7 +29,7 @@ class Dashboard extends Component {
 
      return (
       <div className="dashboard">
-        <input type="text" label="narrow down your search" onChange={this.onchange} className="search"/>
+        <input type="text" placeholder="Search for a specific instrument, ex: Trumpet" onChange={this.onchange} className="search"/>
         <main className="main">
           {cards}
         </main>

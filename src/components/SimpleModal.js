@@ -4,15 +4,12 @@ import { withStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 import Modal from '@material-ui/core/Modal';
 import Button from '@material-ui/core/Button';
+import PaperSheet from './PaperSheet'
 import './SimpleModal.css';
 
-function rand() {
-  return Math.round(Math.random() * 20) - 10;
-}
-
 function getModalStyle() {
-  const top = 50 + rand();
-  const left = 50 + rand();
+  const top = 50;
+  const left = 50;
 
   return {
     top: `${top}%`,
@@ -29,6 +26,7 @@ const styles = theme => ({
     boxShadow: theme.shadows[5],
     padding: theme.spacing.unit * 4,
     outline: 'none',
+    textAlign: 'center'
   },
 });
 
@@ -53,7 +51,7 @@ class SimpleModal extends React.Component {
     const image = this.props.image;
     return (
       <div>
-        <Button variant="outlined" onClick={this.handleOpen}>View</Button>
+        <Button style={{marginBottom: 10}} size="small" variant="contained" color="primary" onClick={this.handleOpen}>View</Button>
         <Modal
           aria-labelledby="simple-modal-title"
           aria-describedby="simple-modal-description"
@@ -61,7 +59,7 @@ class SimpleModal extends React.Component {
           onClose={this.handleClose}
         >
           <div style={getModalStyle()} className={classes.paper}>
-            <img src={image} alt="{name}" className="prof"/>
+            <img src={image} style={{maxHeight: 300}} alt="{name}" className="prof"/>
             <Typography variant="h6" id="modal-title">
               {name}
             </Typography>
@@ -71,16 +69,8 @@ class SimpleModal extends React.Component {
             <Typography variant="subtitle1" id="simple-modal-description">
               {location}
             </Typography>
-            <Typography variant="subtitle2" id="simple-modal-description">
-            Endoresments:
-            </Typography>
-            <Typography variant="subtitle2" id="simple-modal-description">
-            Leslie is a fantastic clarinet player and teacher, our clarinet students have shown immediate improvement after working with her.
-            </Typography>
-            <Typography variant="subtitle2" id="simple-modal-description">
-            - Joe David (Band Director)
-            </Typography>
-            <Button variant="contained" color="primary">Contact</Button>
+            <PaperSheet/>
+            <Button style={{marginTop: 10}} size="small" variant="contained" color="secondary">Contact</Button>
           </div>
         </Modal>
       </div>
