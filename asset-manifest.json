@@ -1,13 +1,13 @@
 {
-  "main.css": "/teacherr/static/css/main.5b514164.chunk.css",
-  "main.js": "/teacherr/static/js/main.037f621b.chunk.js",
-  "main.js.map": "/teacherr/static/js/main.037f621b.chunk.js.map",
+  "main.css": "/teacherr/static/css/main.30ba484a.chunk.css",
+  "main.js": "/teacherr/static/js/main.70ca0d4f.chunk.js",
+  "main.js.map": "/teacherr/static/js/main.70ca0d4f.chunk.js.map",
   "runtime~main.js": "/teacherr/static/js/runtime~main.c7fcd6d8.js",
   "runtime~main.js.map": "/teacherr/static/js/runtime~main.c7fcd6d8.js.map",
-  "static/js/2.d1b3fbd9.chunk.js": "/teacherr/static/js/2.d1b3fbd9.chunk.js",
-  "static/js/2.d1b3fbd9.chunk.js.map": "/teacherr/static/js/2.d1b3fbd9.chunk.js.map",
+  "static/js/2.4bd92b7b.chunk.js": "/teacherr/static/js/2.4bd92b7b.chunk.js",
+  "static/js/2.4bd92b7b.chunk.js.map": "/teacherr/static/js/2.4bd92b7b.chunk.js.map",
   "index.html": "/teacherr/index.html",
-  "precache-manifest.1dec041acaca1970f30dfb76c5c35fbd.js": "/teacherr/precache-manifest.1dec041acaca1970f30dfb76c5c35fbd.js",
+  "precache-manifest.0b33296fc5d8418ea0c6dcfbd7ce70a8.js": "/teacherr/precache-manifest.0b33296fc5d8418ea0c6dcfbd7ce70a8.js",
   "service-worker.js": "/teacherr/service-worker.js",
-  "static/css/main.5b514164.chunk.css.map": "/teacherr/static/css/main.5b514164.chunk.css.map"
+  "static/css/main.30ba484a.chunk.css.map": "/teacherr/static/css/main.30ba484a.chunk.css.map"
 }
