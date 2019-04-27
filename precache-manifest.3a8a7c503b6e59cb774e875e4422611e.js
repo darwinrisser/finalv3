@@ -4,19 +4,19 @@ self.__precacheManifest = [
     "url": "/teacherr/static/js/runtime~main.c7fcd6d8.js"
   },
   {
-    "revision": "f41b87790276cf2855c5",
-    "url": "/teacherr/static/js/main.40cd167a.chunk.js"
+    "revision": "8781306a539c2defdfb1",
+    "url": "/teacherr/static/js/main.5d70467d.chunk.js"
   },
   {
     "revision": "c2553395580f7e0bf3d3",
     "url": "/teacherr/static/js/2.b21709e6.chunk.js"
   },
   {
-    "revision": "f41b87790276cf2855c5",
-    "url": "/teacherr/static/css/main.9140284e.chunk.css"
+    "revision": "8781306a539c2defdfb1",
+    "url": "/teacherr/static/css/main.2fbf7f70.chunk.css"
   },
   {
-    "revision": "d0f022337acd35c401775a226188f9b0",
+    "revision": "1cb77df15ef903d866c37f33dae5b16c",
     "url": "/teacherr/index.html"
   }
 ];
