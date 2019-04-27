@@ -45,11 +45,52 @@ const styles = theme => ({
   },
 });
 
-function SignUp(props) {
-  const { classes } = props;
+class SignUpCOPY extends React.Component {
+  state = {
+    name: "",
+    email: "",
+    instrument: "",
+    location: ""   
+  }
 
-  return (
-    <main className={classes.main}>
+  handleEmail = (event) => {
+    this.setState({email: event.target.value})
+  }
+
+  handleName = (event) => {
+    this.setState({name: event.target.value})
+  }
+
+  handleInstrument = (event) => {
+    this.setState({instrument: event.target.value})
+  }
+
+  handleLocation = (event) => {
+    this.setState({location: event.target.value})
+  }
+
+  createUser = (e) => {
+    e.preventDefault();
+    let newUser={
+      method:"POST",
+      headers: {"Content-Type": "application/json"},
+      body: JSON.stringify({
+          name:this.state.name,
+          instrument:this.state.instrument,
+          email:this.state.email,
+          location:this.state.location
+      })
+    }
+    fetch("http://teacherfinder-server.herokuapp.com/api/users", newUser).then((res)=>{
+      console.log(res.json())
+    })
+    alert('Account created successfully!');
+  }
+
+  render(){
+    const { classes } = this.props;
+    return (
+      <main className={classes.main}>
       <CssBaseline />
       <Paper className={classes.paper}>
         <Avatar className={classes.avatar}>
@@ -60,23 +101,23 @@ function SignUp(props) {
         </Typography>
         <form className={classes.form}>
           <FormControl margin="normal" required fullWidth>
+            <InputLabel htmlFor="name">Full Name</InputLabel>
+            <Input onChange={this.handleName} id="name" name="name" autoComplete="name" autoFocus/>
+          </FormControl>
+          <FormControl margin="normal" required fullWidth>
             <InputLabel htmlFor="email">Email Address</InputLabel>
-            <Input id="email" name="email" autoComplete="email" autoFocus />
+            <Input onChange={this.handleEmail} id="email" name="email" autoComplete="email" autoFocus/>
           </FormControl>
           <FormControl margin="normal" required fullWidth>
             <InputLabel htmlFor="instrument">Instrument(s)</InputLabel>
-            <Input name="instrument" type="instrument" id="instrument" />
+            <Input onChange={this.handleInstrument} name="instrument" type="instrument" id="instrument" />
           </FormControl>
           <FormControl margin="normal" required fullWidth>
             <InputLabel htmlFor="location">Location ex: Austin, Leander, etc.</InputLabel>
-            <Input name="location" type="location" id="location" autoComplete="location" />
+            <Input onChange={this.handleLocation} name="location" type="location" id="location" autoComplete="location" />
           </FormControl>
           <FormControl margin="normal" required fullWidth>
             <InputLabel htmlFor="password">Password</InputLabel>
-            <Input name="password" type="password" id="password" autoComplete="current-password" />
-          </FormControl>
-          <FormControl margin="normal" required fullWidth>
-            <InputLabel htmlFor="password">Confirm Password</InputLabel>
             <Input name="password" type="password" id="password" autoComplete="current-password" />
           </FormControl>
           <FormControlLabel
@@ -84,6 +125,7 @@ function SignUp(props) {
             label="Remember me"
           />
           <Button
+            onClick={this.createUser}
             type="submit"
             fullWidth
             variant="contained"
@@ -95,11 +137,8 @@ function SignUp(props) {
         </form>
       </Paper>
     </main>
-  );
+    );
+  }
 }
 
-SignUp.propTypes = {
-  classes: PropTypes.object.isRequired,
-};
-
-export default withStyles(styles)(SignUp);
+export default withStyles(styles)(SignUpCOPY);

@@ -19,12 +19,12 @@ function PaperSheet(props) {
     <div>
       <Paper className={classes.root} elevation={1}>
         <Typography component="p">
-            This is an example of a review or endorsement left by another teacher who has worked with this teacher.
+            {props.endorsements[0]}
         </Typography>
-        <hr/>
+        {/* <hr/>
         <Typography component="p">
             Name of person endorsing this teacher.
-        </Typography>
+        </Typography> */}
       </Paper>
     </div>
   );

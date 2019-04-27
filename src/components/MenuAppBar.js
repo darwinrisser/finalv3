@@ -55,14 +55,14 @@ class MenuAppBar extends React.Component {
                 <Link to="/">
                   <i class="fas fa-music"></i>  teacherr
                 </Link>
-                <Link to="/dashboard">
-                  <Button variant="" className={classes.button} style={{color: 'black'}}>
-                    
-                  </Button>
-                </Link>
               </Typography>
             {auth && (
                 <div className={classes.button} id="nav">
+                    <Link to="/dashboard">
+                      <Button variant="outlined" className={classes.button} style={{color: 'black'}}>
+                        DASHBOARD
+                      </Button>
+                    </Link>
                     <Link to="/signup">
                       <Button variant="contained" color="secondary" className={classes.button}>
                         Sign Up

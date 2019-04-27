@@ -26,11 +26,11 @@ function Home(props) {
             REGISTER
           </Button>
         </Link>
-        <span id="down"> 
-          <i class="far fa-arrow-alt-circle-down"></i>
+        <span id="down"><a href="#middle"> 
+          <i class="far fa-arrow-alt-circle-down"></i></a>
         </span>
       </div>
-      <div className="mid">
+      <div className="mid" id="middle">
         <div className="info">
           <p>
             <i class="fas fa-search-location"></i>
@@ -47,10 +47,10 @@ function Home(props) {
             <i class="fas fa-id-card"></i>
           </p>  
           <p>
-            Looking for a new instrumental teacher? Find the best teaching talent in your area with our easy to use search feature.
+            Teachers are reviewed by their peers and co-workers so that you can make the right decision for your students.
           </p>
         </div>   
-      </div>  
+      </div>
       <footer>
           <p>
             <i class="fab fa-react"></i> + <i class="fab fa-node-js"></i> + <i class="fas fa-coffee"></i>

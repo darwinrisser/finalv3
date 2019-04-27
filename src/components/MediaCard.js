@@ -38,10 +38,12 @@ class MediaCard extends React.Component {
           </Typography>
         </CardContent>
         <SimpleModal 
+            email={this.props.email}
             name={this.props.user.name}
             instrument={this.props.user.instrument}
             image={this.props.user.image}
             location={this.props.user.location}
+            endorsements={this.props.user.endorsements}
             />   
       </CardActionArea>
     </Card>

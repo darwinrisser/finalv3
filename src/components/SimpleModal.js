@@ -69,8 +69,8 @@ class SimpleModal extends React.Component {
             <Typography variant="subtitle1" id="simple-modal-description">
               {location}
             </Typography>
-            <PaperSheet/>
-            <Button style={{marginTop: 10}} size="small" variant="contained" color="secondary">Contact</Button>
+            <PaperSheet endorsements={this.props.endorsements}/>
+            <Button style={{marginTop: 10}} size="small" variant="contained" color="secondary" ><a style={{color: "white"}} href="mailto:{this.props.email}" target="_blank">Contact</a></Button>
           </div>
         </Modal>
       </div>
