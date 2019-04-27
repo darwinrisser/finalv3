@@ -9,7 +9,7 @@ class Dashboard extends Component {
   }
 
   componentDidMount(){
-    fetch('http://teacherfinder-server.herokuapp.com/api/users')
+    fetch('https://teacherfinder-server.herokuapp.com/api/users')
     .then(response => response.json())
     .then(json => this.setState({users:json}))
   }

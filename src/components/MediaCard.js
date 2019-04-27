@@ -38,7 +38,7 @@ class MediaCard extends React.Component {
           </Typography>
         </CardContent>
         <SimpleModal 
-            email={this.props.email}
+            email={this.props.user.email}
             name={this.props.user.name}
             instrument={this.props.user.instrument}
             image={this.props.user.image}

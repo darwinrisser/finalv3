@@ -81,7 +81,7 @@ class SignUpCOPY extends React.Component {
           location:this.state.location
       })
     }
-    fetch("http://teacherfinder-server.herokuapp.com/api/users", newUser).then((res)=>{
+    fetch("https://teacherfinder-server.herokuapp.com/api/users", newUser).then((res)=>{
       console.log(res.json())
     })
     alert('Account created successfully!');

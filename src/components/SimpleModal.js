@@ -49,6 +49,8 @@ class SimpleModal extends React.Component {
     const instrument = this.props.instrument;
     const location = this.props.location;
     const image = this.props.image;
+    const email = this.props.email;
+
     return (
       <div>
         <Button style={{marginBottom: 10}} size="small" variant="contained" color="primary" onClick={this.handleOpen}>View</Button>
@@ -70,7 +72,7 @@ class SimpleModal extends React.Component {
               {location}
             </Typography>
             <PaperSheet endorsements={this.props.endorsements}/>
-            <Button style={{marginTop: 10}} size="small" variant="contained" color="secondary" ><a style={{color: "white"}} href="mailto:{this.props.email}" target="_blank">Contact</a></Button>
+            <Button style={{marginTop: 10}} size="small" variant="contained" color="secondary" ><a style={{color: "white"}} href={"mailto:" + email} target="_blank">Contact</a></Button>
           </div>
         </Modal>
       </div>
